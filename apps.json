@@ -18,13 +18,6 @@
     "description": "Connect ideas, tasks, and projects in a visual map, then build steady progress through daily work sessions. Includes browser and VS Code extensions."
   },
   {
-    "icon": "assets/daftrak.png",
-    "links": {},
-    "name": "Daftrak",
-    "slug": "daftrak",
-    "description": "A shop management platform designed to help businesses organize their day-to-day operations."
-  },
-  {
     "icon": "assets/mattaby.png",
     "links": {
       "Google Play": "https://play.google.com/store/apps/details?id=com.swerky.mattaby"
@@ -42,14 +35,18 @@
   },
   {
     "icon": null,
-    "links": {},
+    "links": {
+      "Website": "https://familetree.web.app/"
+    },
     "name": "FamilyTree",
     "slug": "family-tree",
     "description": "Explore family relationships through an interactive 3D tree that you can zoom and rotate."
   },
   {
     "icon": null,
-    "links": {},
+    "links": {
+      "Website": "https://snail-mail-cosmic-run.amberchord35.chatgpt.site/"
+    },
     "name": "Snail Mail — Web Edition",
     "slug": "snail-mail-web",
     "description": "An experimental browser arcade racer and fan tribute, built with procedural 3D models and synthesized sound."

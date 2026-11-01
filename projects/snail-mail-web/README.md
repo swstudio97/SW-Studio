@@ -6,7 +6,7 @@ An experimental browser arcade racer and fan tribute, built with procedural 3D m
 
 ## Explore
 
-Public launch link coming soon.
+[Play Snail Mail](https://snail-mail-cosmic-run.amberchord35.chatgpt.site/)
 
 ## About this repository
 

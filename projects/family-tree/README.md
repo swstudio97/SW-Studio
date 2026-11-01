@@ -6,7 +6,7 @@ Explore family relationships through an interactive 3D tree that you can zoom an
 
 ## Explore
 
-Public launch link coming soon.
+[Open FamilyTree](https://familetree.web.app/)
 
 ## About this repository
 
