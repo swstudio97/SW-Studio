@@ -1,0 +1,57 @@
+[
+  {
+    "icon": "assets/infaq.png",
+    "links": {
+      "Website": "https://infaq.app/"
+    },
+    "name": "INFAQ",
+    "slug": "infaq",
+    "description": "Understand your spending with expense tracking, bank SMS parsing, categories, charts, and CSV export. Available in Arabic and English."
+  },
+  {
+    "icon": "assets/khyoot.png",
+    "links": {
+      "Website": "https://khyoot.web.app/"
+    },
+    "name": "Khyoot",
+    "slug": "khyoot",
+    "description": "Connect ideas, tasks, and projects in a visual map, then build steady progress through daily work sessions. Includes browser and VS Code extensions."
+  },
+  {
+    "icon": "assets/daftrak.png",
+    "links": {},
+    "name": "Daftrak",
+    "slug": "daftrak",
+    "description": "A shop management platform designed to help businesses organize their day-to-day operations."
+  },
+  {
+    "icon": "assets/mattaby.png",
+    "links": {
+      "Google Play": "https://play.google.com/store/apps/details?id=com.swerky.mattaby"
+    },
+    "name": "Mattaby",
+    "slug": "mattaby",
+    "description": "Record road bumps and potholes with your phone, view community reports on a map, and help make road hazards easier to spot."
+  },
+  {
+    "icon": null,
+    "links": {},
+    "name": "Ayn Dash",
+    "slug": "ayn-dash",
+    "description": "An Android dashcam project with rear-camera loop recording and optional combined front-and-rear video on supported devices."
+  },
+  {
+    "icon": null,
+    "links": {},
+    "name": "FamilyTree",
+    "slug": "family-tree",
+    "description": "Explore family relationships through an interactive 3D tree that you can zoom and rotate."
+  },
+  {
+    "icon": null,
+    "links": {},
+    "name": "Snail Mail — Web Edition",
+    "slug": "snail-mail-web",
+    "description": "An experimental browser arcade racer and fan tribute, built with procedural 3D models and synthesized sound."
+  }
+]
