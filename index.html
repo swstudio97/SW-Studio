@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b16">
+  <meta name="description"
+    content="SW Studio استوديو تصميم وتطوير منتجات رقمية. اكتشف مشاريعنا: خيوط لتنظيم الأفكار، Mattaby لسلامة الطرق، إنفاق، وشجرة العائلة.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="SW Studio">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SW Studio">
+  <meta property="og:title" content="SW Studio — نصنع منتجات رقمية تبدأ بفكرة">
+  <meta property="og:description"
+    content="استوديو تصميم وتطوير منتجات رقمية هادفة. تعرّف على مشاريع SW Studio واكتشف أدوات تجعل الحياة اليومية أسهل.">
+  <meta property="og:image" content="assets/sw-studio-facebook-cover.png">
+  <meta property="og:image:alt" content="SW Studio — استوديو تصميم وتطوير منتجات رقمية">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SW Studio — نصنع منتجات رقمية تبدأ بفكرة">
+  <meta name="twitter:description" content="استوديو تصميم وتطوير منتجات رقمية هادفة. تعرّف على مشاريعنا.">
+  <meta name="twitter:image" content="assets/sw-studio-facebook-cover.png">
+  <link rel="icon" type="image/png" href="assets/sw-studio-logo.png">
+  <title>SW Studio | تصميم وتطوير منتجات رقمية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090b16;
+      --panel: #111421;
+      --text: #f7f4ee;
+      --muted: #a5a9ba;
+      --purple: #a855f7;
+      --cyan: #36e2e8;
+      --line: #25283a;
+      --max: 1160px
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Sans Arabic", "DM Sans", sans-serif;
+      line-height: 1.7
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      font: inherit
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 48px));
+      margin: auto
+    }
+
+    .topline {
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan), var(--purple), #f5c99f)
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #090b16e8;
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid #ffffff0c
+    }
+
+    .nav {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font: 800 19px "DM Sans", sans-serif;
+      direction: ltr;
+      letter-spacing: -.6px
+    }
+
+    .mark {
+      width: 43px;
+      height: 43px;
+      display: block;
+      overflow: hidden;
+      border-radius: 10px
+    }
+
+    .mark img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .mark path:last-child {
+      stroke: var(--cyan)
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      color: #c8c9d2;
+      font-size: 14px
+    }
+
+    .links a:hover {
+      color: white
+    }
+
+    .contact {
+      padding: 9px 17px;
+      border: 1px solid #ffffff28;
+      border-radius: 999px;
+      color: white !important
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 104px 0 86px;
+      min-height: 590px;
+      display: flex;
+      align-items: center
+    }
+
+    .glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      opacity: .18
+    }
+
+    .g1 {
+      width: 440px;
+      height: 440px;
+      background: #9b45ee;
+      top: -180px;
+      left: -120px
+    }
+
+    .g2 {
+      width: 350px;
+      height: 350px;
+      background: #1abfcf;
+      bottom: -220px;
+      right: 8%
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 800px
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #d6c2f6;
+      font-size: 13px;
+      border: 1px solid #a855f744;
+      border-radius: 99px;
+      padding: 5px 12px;
+      background: #a855f710
+    }
+
+    .dot {
+      height: 7px;
+      width: 7px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 14px var(--cyan)
+    }
+
+    h1 {
+      font-size: clamp(46px, 7vw, 82px);
+      line-height: 1.19;
+      letter-spacing: -2px;
+      margin: 23px 0 17px;
+      font-weight: 700
+    }
+
+    h1 em {
+      font-style: normal;
+      background: linear-gradient(100deg, #d8a5ff, #9b59ed 55%, #5ce6e9);
+      color: transparent;
+      background-clip: text
+    }
+
+    .lead {
+      font-size: 18px;
+      color: #b8bbca;
+      max-width: 600px;
+      margin: 0 0 31px
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: .2s
+    }
+
+    .primary {
+      color: #11121b;
+      background: #f4edff
+    }
+
+    .primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px #b56aff33
+    }
+
+    .secondary {
+      border: 1px solid #ffffff26;
+      color: #f4f2fa
+    }
+
+    .secondary:hover {
+      background: #ffffff0c
+    }
+
+    .arrow {
+      font: 20px "DM Sans";
+      direction: ltr
+    }
+
+    .stats {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: #ffffff03
+    }
+
+    .statrow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 22px 0
+    }
+
+    .stat {
+      padding: 0 28px;
+      border-left: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .stat:first-child {
+      padding-right: 0
+    }
+
+    .stat:last-child {
+      border: 0
+    }
+
+    .stat b {
+      font: 700 23px "DM Sans";
+      direction: ltr
+    }
+
+    .stat span {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    section {
+      padding: 92px 0
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 29px
+    }
+
+    .kicker {
+      color: var(--cyan);
+      font-size: 13px;
+      margin: 0 0 7px
+    }
+
+    .section-head h2 {
+      font-size: 36px;
+      line-height: 1.3;
+      margin: 0;
+      letter-spacing: -.8px
+    }
+
+    .section-head>p {
+      color: var(--muted);
+      max-width: 410px;
+      font-size: 14px;
+      margin: 0
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 19px
+    }
+
+    .card {
+      border: 1px solid #ffffff14;
+      background: linear-gradient(145deg, #141726, #10121e);
+      border-radius: 17px;
+      overflow: hidden;
+      transition: transform .22s, border-color .22s
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #a855f766
+    }
+
+    .visual {
+      height: 270px;
+      position: relative;
+      overflow: hidden;
+      background: #171626
+    }
+
+    .visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s
+    }
+
+    .card:hover .visual img {
+      transform: scale(1.035)
+    }
+
+    .visual:after {
+      content: "";
+      position: absolute;
+      inset: 45% 0 0;
+      background: linear-gradient(transparent, #10121eaa)
+    }
+
+    .tag {
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      right: 15px;
+      border: 1px solid #ffffff28;
+      background: #080a17c9;
+      padding: 5px 11px;
+      border-radius: 99px;
+      font-size: 11px;
+      color: #e5d5fb
+    }
+
+    .cardbody {
+      padding: 19px 21px 22px
+    }
+
+    .titleline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px
+    }
+
+    .titleline h3 {
+      font-size: 22px;
+      margin: 0;
+      font-family: "DM Sans", "IBM Plex Sans Arabic", sans-serif
+    }
+
+    .external {
+      width: 34px;
+      height: 34px;
+      border: 1px solid #ffffff22;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--cyan);
+      font: 19px "DM Sans";
+      direction: ltr
+    }
+
+    .cardbody p {
+      color: #aeb1c0;
+      font-size: 14px;
+      margin: 8px 0 16px;
+      min-height: 48px
+    }
+
+    .chips {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap
+    }
+
+    .chips span {
+      font-size: 11px;
+      color: #c6bdd4;
+      background: #ffffff09;
+      padding: 4px 9px;
+      border-radius: 5px
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .placeholder {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      position: relative;
+      background: radial-gradient(ellipse at 55% 50%, #392354, #171626 60%)
+    }
+
+    .placeholder:before,
+    .placeholder:after {
+      content: "";
+      position: absolute;
+      width: 210px;
+      height: 210px;
+      border: 1px solid #b35cf866;
+      border-radius: 50%;
+      transform: rotate(-24deg) scaleY(.42)
+    }
+
+    .placeholder:after {
+      transform: rotate(38deg) scaleY(.42);
+      border-color: #37d9dd55
+    }
+
+    .placeholder .picon {
+      position: relative;
+      z-index: 1;
+      width: 90px;
+      height: 90px;
+      border: 1px solid #ffffff32;
+      border-radius: 27px;
+      background: #11162bdd;
+      display: grid;
+      place-items: center;
+      font: 700 32px "DM Sans";
+      color: #c688ff;
+      box-shadow: 0 0 55px #a855f744
+    }
+
+    .placeholder.matt {
+      background: radial-gradient(ellipse at 60% 50%, #163b57, #101424 60%)
+    }
+
+    .placeholder.matt:before {
+      border-color: #36dfe877;
+      transform: rotate(30deg) scaleY(.35)
+    }
+
+    .placeholder.matt:after {
+      border-color: #f2ba6c77
+    }
+
+    .placeholder.matt .picon {
+      color: #49e4ed
+    }
+
+    .about {
+      background: #0d0f1a;
+      border-block: 1px solid #ffffff0d
+    }
+
+    .aboutrow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center
+    }
+
+    .about h2 {
+      font-size: 38px;
+      line-height: 1.35;
+      margin: 0 0 14px
+    }
+
+    .about p {
+      color: var(--muted);
+      margin: 0;
+      max-width: 490px
+    }
+
+    .about-mark {
+      min-height: 230px;
+      border: 1px solid #ffffff17;
+      border-radius: 18px;
+      background: radial-gradient(ellipse at 45% 45%, #5c267633, transparent 56%), #111421;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden
+    }
+
+    .about-mark:before {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      border: 1px solid #9d50dc55;
+      border-radius: 50%;
+      transform: scaleY(.38) rotate(-23deg)
+    }
+
+    .bigmark {
+      position: relative;
+      z-index: 1;
+      font: 800 clamp(56px, 8vw, 94px) "DM Sans";
+      letter-spacing: -8px;
+      direction: ltr
+    }
+
+    .bigmark span {
+      color: var(--cyan)
+    }
+
+    .cta {
+      padding: 78px 0
+    }
+
+    .ctabox {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 52px 22px;
+      border: 1px solid #a855f744;
+      border-radius: 20px;
+      background: radial-gradient(ellipse at 50% 120%, #8e3fe729, transparent 55%), #111421
+    }
+
+    .ctabox h2 {
+      font-size: 32px;
+      margin: 0 0 9px
+    }
+
+    .ctabox p {
+      color: var(--muted);
+      margin: 0 auto 22px
+    }
+
+    .ctabox .btn {
+      background: linear-gradient(100deg, #d5a2ff, #a855f7);
+      color: #100c18
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 23px 0;
+      color: #8d91a3;
+      font-size: 12px
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px
+    }
+
+    .foot .brand {
+      font-size: 15px;
+      color: #eceaf2
+    }
+
+    .foot .mark {
+      width: 29px;
+      height: 29px;
+      border-radius: 9px;
+      font-size: 12px
+    }
+
+    @media(max-width:760px) {
+      .wrap {
+        width: min(100% - 34px, var(--max))
+      }
+
+      .nav {
+        height: 68px
+      }
+
+      .links {
+        gap: 15px
+      }
+
+      .links a:not(.contact) {
+        display: none
+      }
+
+      .hero {
+        padding: 80px 0 68px;
+        min-height: auto
+      }
+
+      h1 {
+        font-size: clamp(44px, 11vw, 68px);
+        letter-spacing: -1.5px
+      }
+
+      .lead {
+        font-size: 16px
+      }
+
+      .statrow {
+        padding: 18px 0
+      }
+
+      .stat {
+        padding: 0 12px;
+        gap: 8px;
+        display: block
+      }
+
+      .stat b {
+        font-size: 20px
+      }
+
+      .stat span {
+        display: block;
+        font-size: 11px
+      }
+
+      .stat:first-child {
+        padding-right: 0
+      }
+
+      section {
+        padding: 68px 0
+      }
+
+      .section-head {
+        display: block
+      }
+
+      .section-head h2 {
+        font-size: 31px
+      }
+
+      .section-head>p {
+        margin-top: 10px
+      }
+
+      .grid {
+        gap: 14px
+      }
+
+      .visual {
+        height: 220px
+      }
+
+      .aboutrow {
+        grid-template-columns: 1fr;
+        gap: 26px
+      }
+
+      .about h2 {
+        font-size: 32px
+      }
+
+      .about-mark {
+        min-height: 180px
+      }
+
+      .ctabox h2 {
+        font-size: 27px
+      }
+    }
+
+    @media(max-width:520px) {
+      .grid {
+        grid-template-columns: 1fr
+      }
+
+      .visual {
+        height: 245px
+      }
+
+      .stat b {
+        font-size: 18px
+      }
+
+      .foot {
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .actions .btn {
+        flex: 1;
+        justify-content: center
+      }
+
+      .section-head {
+        margin-bottom: 22px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="SW Studio"><span class="mark"><img src="assets/sw-studio-logo.png"
+            alt=""></span><span>SW STUDIO</span></a>
+      <nav class="links" aria-label="التنقل"><a href="#projects">مشاريعنا</a><a href="#about">عن الاستوديو</a><a
+          class="contact" href="mailto:hello@swstudio.dev">تواصل معنا <span class="arrow">↗</span></a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="glow g1"></div>
+      <div class="glow g2"></div>
+      <div class="wrap hero-inner">
+        <span class="eyebrow"><i class="dot"></i> استوديو منتجات رقمية مستقل</span>
+        <h1>نحوّل الأفكار<br>إلى <em>تجارب تُعاش.</em></h1>
+        <p class="lead">نصمّم ونبني منتجات رقمية تحلّ مشكلات حقيقية، بتفاصيل مدروسة وتجربة بسيطة تبدأ من احتياجك.</p>
+        <div class="actions"><a class="btn primary" href="#projects">اكتشف مشاريعنا <span class="arrow">↓</span></a><a
+            class="btn secondary" href="mailto:hello@swstudio.dev">ابدأ محادثة <span class="arrow">↗</span></a></div>
+      </div>
+    </section>
+    <div class="stats">
+      <div class="wrap statrow">
+        <div class="stat"><b>04</b><span>مشاريع قيد البناء</span></div>
+        <div class="stat"><b>01</b><span>فريق واحد، أفكار متعددة</span></div>
+        <div class="stat"><b>∞</b><span>مساحة للأفكار الجديدة</span></div>
+      </div>
+    </div>
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">من الفكرة إلى الاستخدام</p>
+            <h2>مشاريعنا</h2>
+          </div>
+          <p>كل مشروع يبدأ بسؤال، وينتهي بأداة مفيدة تجعل الحياة اليومية أسهل.</p>
+        </div>
+        <div class="grid">
+          <a class="card" href="https://khyoot.web.app" target="_blank" rel="noopener noreferrer"
+            aria-label="افتح مشروع خيوط">
+            <div class="visual"><img src="assets/posts/khyoot-introduction.png" alt="تصميم تعريفي بمشروع خيوط"
+                loading="lazy"><span class="tag">إنتاجية وتخطيط</span></div>
+            <div class="cardbody">
+              <div class="titleline">
+                <h3>Khyoot <span style="color:#bb7af5">خيوط</span></h3><span class="external"
+                  aria-hidden="true">↗</span>
+              </div>
+              <p>حوّل الأفكار المتفرقة إلى خطط مترابطة وخطوات يومية واضحة.</p>
+              <div class="chips"><span>تنظيم الأفكار</span><span>تخطيط</span><span>منتج ويب</span></div>
+            </div>
+          </a>
+          <a class="card" href="https://mattaby.web.app" target="_blank" rel="noopener noreferrer"
+            aria-label="افتح مشروع Mattaby">
+            <div class="visual">
+              <img src="assets/posts/mattaby-introduction.jpg" alt="تصميم تعريفي بمشروع Mattaby" loading="lazy"><span
+                class="tag">تنقل وسلامة طرق</span>
+            </div>
+            <div class="cardbody">
+              <div class="titleline">
+                <h3>Mattaby</h3><span class="external" aria-hidden="true">↗</span>
+              </div>
+              <p>منصة مجتمعية لرصد مطبات الطريق ومشاركة المخاطر لمشاوير أكثر أمانًا.</p>
+              <div class="chips"><span>خرائط</span><span>سلامة الطرق</span><span>مجتمع</span></div>
+            </div>
+          </a>
+          <a class="card" href="https://infaq.web.app" target="_blank" rel="noopener noreferrer"
+            aria-label="افتح مشروع إنفاق">
+            <div class="visual"><img src="assets/posts/infaq-introduction.png" alt="تصميم تعريفي بمشروع إنفاق"
+                loading="lazy"><span class="tag">عطاء ومجتمع</span></div>
+            <div class="cardbody">
+              <div class="titleline">
+                <h3>Infaq <span style="color:#bb7af5">إنفاق</span></h3><span class="external"
+                  aria-hidden="true">↗</span>
+              </div>
+              <p>فكرة رقمية تجعل الوصول إلى فرص العطاء والمساهمة فيها أقرب وأسهل.</p>
+              <div class="chips"><span>أثر اجتماعي</span><span>عطاء</span><span>منتج رقمي</span></div>
+            </div>
+          </a>
+          <a class="card" href="https://familetree.web.app" target="_blank" rel="noopener noreferrer"
+            aria-label="افتح مشروع FamilyTree">
+            <div class="visual"><img src="assets/posts/familytree-introduction.jpg" alt="تصميم مشروع شجرة العائلة"
+                loading="lazy"><span class="tag">عائلة وذاكرة</span></div>
+            <div class="cardbody">
+              <div class="titleline">
+                <h3>FamilyTree</h3><span class="external" aria-hidden="true">↗</span>
+              </div>
+              <p>مساحة تجمع حكايات العائلة وروابطها، وتحفظها للأجيال القادمة.</p>
+              <div class="chips"><span>شجرة العائلة</span><span>قصص</span><span>تراث</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="wrap aboutrow">
+        <div>
+          <p class="kicker">من نحن</p>
+          <h2>نؤمن أن التقنية<br>تبدأ من <em style="color:#be83f2;font-style:normal">الناس.</em></h2>
+          <p>SW Studio استوديو مستقل يجمع التصميم والتقنية لصناعة منتجات رقمية هادفة. نبدأ بالاستماع، ونبني بتأنٍ،
+            ونطوّر كل فكرة لتصبح تجربة نافعة.</p>
+        </div>
+        <div class="about-mark">
+          <img src="assets/sw-studio-logo.png" alt="شعار SW Studio"
+            style="position:relative;z-index:1;width:min(250px,70%);height:auto;border-radius:16px">
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="wrap ctabox">
+        <h2>عندك فكرة تستحق أن ترى النور؟</h2>
+        <p>خلّينا نبدأ أول خيط مع بعض.</p><a class="btn" href="mailto:hello@swstudio.dev">تواصل مع الاستوديو <span
+            class="arrow">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot"><a class="brand" href="#home"><span class="mark"><img src="assets/sw-studio-logo.png"
+            alt=""></span><span>SW STUDIO</span></a><span>© <span id="year"></span> SW Studio — نصنع ما يبدأ
+        بفكرة.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

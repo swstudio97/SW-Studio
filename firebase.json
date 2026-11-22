@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "firestore.*",
+      "functions/**",
+      "tools/**",
+      "output/**",
+      "**/*.md",
+      "package*.json",
+      "tests/**",
+      "**/.*",
+      "**/.*/**",
+      "**/*-debug.log",
+      "**/node_modules/**",
+      "projects/**",
+      "apps.json"
+    ],
+    "headers": [
+      {
+        "source": "/assets/feedback-client.js",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ]
+  }
+}
