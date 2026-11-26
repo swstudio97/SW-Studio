@@ -4,7 +4,7 @@
 
 By **SW Studio**
 
-Record road bumps and potholes with your phone, view community reports on a map, and help make road hazards easier to spot.
+Turn your Android phone into a dashcam that automatically detects road bumps, maps hazards reported by drivers, and lets you share your live location.
 
 ## Explore
 

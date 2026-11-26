@@ -24,14 +24,7 @@
     },
     "name": "Mattaby",
     "slug": "mattaby",
-    "description": "Record road bumps and potholes with your phone, view community reports on a map, and help make road hazards easier to spot."
-  },
-  {
-    "icon": null,
-    "links": {},
-    "name": "Ayn Dash",
-    "slug": "ayn-dash",
-    "description": "An Android dashcam project with rear-camera loop recording and optional combined front-and-rear video on supported devices."
+    "description": "Turn your Android phone into a dashcam that automatically detects road bumps, maps hazards reported by drivers, and lets you share your live location."
   },
   {
     "icon": null,
